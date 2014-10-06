@@ -7,6 +7,7 @@ class designate::central inherits designate {
   service {'designate-central':
     ensure    => running,
     provider  => upstart,
+    require   => Package['designate-central'],
     subscribe => File['designate-config'],
   }
   

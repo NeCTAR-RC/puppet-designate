@@ -7,6 +7,7 @@ class designate::api inherits designate {
   service {'designate-api':
     ensure    => running,
     provider  => upstart,
+    require   => Package['designate-api'],
     subscribe => [ File['designate-config'],
                    File['designate-apipaste'],],
   }
