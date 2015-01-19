@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa2559ec_caff83a9",
+        "filename": "manifests/develop/central.pp",
+        "patchSetId": 3
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2015-01-19T00:00:34Z",
+      "side": 1,
+      "message": "DESIGNAGTE",
+      "revId": "e25f158bba0c1032e521f6f6c36ded4cb89f468b",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    }
+  ]
+}
