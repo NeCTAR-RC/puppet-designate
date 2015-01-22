@@ -1,12 +1,16 @@
-class designate($keystone_user='designate',
-                $keystone_pass,
-                $database_connection,
-                $powerdns_db_connection,
-                $rabbit_hosts,
-                $rabbit_user='designate',
-                $rabbit_pass,
-                $rabbit_virtual_host,
-                $managed_resource_email) {
+# Openstack designate
+class designate(
+  $keystone_user='designate',
+  $keystone_pass,
+  $database_connection,
+  $powerdns_db_connection,
+  $rabbit_hosts,
+  $rabbit_user='designate',
+  $rabbit_pass,
+  $rabbit_virtual_host,
+  $memcached_servers='localhost:11211',
+  $managed_resource_email)
+{
 
   $openstack_version = hiera('openstack_version')
   $keystone_host = hiera('keystone::host')
@@ -20,8 +24,8 @@ class designate($keystone_user='designate',
   }
 
   file { 'designate-config':
-    path    => '/etc/designate/designate.conf',
     ensure  => present,
+    path    => '/etc/designate/designate.conf',
     owner   => designate,
     group   => designate,
     mode    => '0600',
@@ -30,8 +34,8 @@ class designate($keystone_user='designate',
   }
 
   file { 'designate-apipaste':
-    path    => '/etc/designate/api-paste.ini',
     ensure  => present,
+    path    => '/etc/designate/api-paste.ini',
     owner   => designate,
     group   => designate,
     mode    => '0600',
@@ -40,8 +44,8 @@ class designate($keystone_user='designate',
   }
 
   file { 'designate-policy':
-    path    => '/etc/designate/policy.json',
     ensure  => present,
+    path    => '/etc/designate/policy.json',
     owner   => designate,
     group   => designate,
     mode    => '0600',
