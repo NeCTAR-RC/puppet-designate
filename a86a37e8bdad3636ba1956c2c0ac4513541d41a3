@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa2559ec_33e97a1b",
+        "filename": "manifests/develop.pp",
+        "patchSetId": 4
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1000084
+      },
+      "writtenOn": "2015-02-02T03:13:44Z",
+      "side": 1,
+      "message": "this should be globally unique.",
+      "range": {
+        "startLine": 15,
+        "startChar": 8,
+        "endLine": 15,
+        "endChar": 58
+      },
+      "revId": "a86a37e8bdad3636ba1956c2c0ac4513541d41a3",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa2559ec_13eef622",
+        "filename": "manifests/develop.pp",
+        "patchSetId": 4
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1000084
+      },
+      "writtenOn": "2015-02-02T03:13:44Z",
+      "side": 1,
+      "message": "this should be globally unique.",
+      "range": {
+        "startLine": 28,
+        "startChar": 9,
+        "endLine": 28,
+        "endChar": 25
+      },
+      "revId": "a86a37e8bdad3636ba1956c2c0ac4513541d41a3",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa2559ec_73f3f20a",
+        "filename": "manifests/develop.pp",
+        "patchSetId": 4
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1000084
+      },
+      "writtenOn": "2015-02-02T03:13:44Z",
+      "side": 1,
+      "message": "etc.",
+      "range": {
+        "startLine": 36,
+        "startChar": 9,
+        "endLine": 36,
+        "endChar": 33
+      },
+      "revId": "a86a37e8bdad3636ba1956c2c0ac4513541d41a3",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa2559ec_53f86ee5",
+        "filename": "manifests/develop.pp",
+        "patchSetId": 4
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 1000084
+      },
+      "writtenOn": "2015-02-02T03:13:44Z",
+      "side": 1,
+      "message": "etc.",
+      "range": {
+        "startLine": 43,
+        "startChar": 9,
+        "endLine": 43,
+        "endChar": 37
+      },
+      "revId": "a86a37e8bdad3636ba1956c2c0ac4513541d41a3",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    }
+  ]
+}
