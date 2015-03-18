@@ -52,4 +52,10 @@ class designate(
     source  => "puppet:///modules/designate/${openstack_version}/policy.json",
     require => Package['designate-common'],
   }
+
+  file { '/etc/designate/conf.d':
+    ensure  => directory,
+    owner   => designate,
+    group   => designate,
+  }
 }
