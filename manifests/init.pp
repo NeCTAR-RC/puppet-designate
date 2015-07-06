@@ -57,5 +57,6 @@ class designate(
     ensure  => directory,
     owner   => designate,
     group   => designate,
+    mode    => '0755',
   }
 }

@@ -57,6 +57,7 @@ class designate::develop(
     ensure => directory,
     owner  => designate,
     group  => designate,
+    mode   => '0755',
   }
 
   user {'designate':
@@ -66,6 +67,8 @@ class designate::develop(
   file { '/etc/sudoers.d/designate_sudoers':
     content => "Defaults:designate !requiretty\n\ndesignate ALL = (root) NOPASSWD: /usr/local/bin/designate-rootwrap\n",
     mode    => '0640',
+    owner   => 'root',
+    group   => 'root',
   }
   file { '/etc/designate/rootwrap.conf':
     ensure => link,
