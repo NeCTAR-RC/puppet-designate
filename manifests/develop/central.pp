@@ -7,6 +7,9 @@ class designate::develop::central inherits designate::central {
   file {'/etc/init/designate-central.conf':
     source => 'puppet:///modules/designate/develop/central-init.conf',
     before => Service['designate-central'],
+    owner  => 'root',
+    group  => 'root',
+    mode   => '0644',
   }
   file {'/usr/local/bin/designate-central':
     ensure => link,
