@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "9a245df4_61115aac",
+        "filename": "manifests/develop.pp",
+        "patchSetId": 1
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 1000105
+      },
+      "writtenOn": "2015-07-06T05:15:50Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9a245df4_21092296",
+      "range": {
+        "startLine": 60,
+        "startChar": 14,
+        "endLine": 60,
+        "endChar": 20
+      },
+      "revId": "627b6e74cd56dbc5ea605bd44f95a2c99208def4",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9a245df4_e1d70aec",
         "filename": "manifests/develop/api.pp",
         "patchSetId": 1
@@ -48,6 +72,30 @@
     },
     {
       "key": {
+        "uuid": "9a245df4_c125a60b",
+        "filename": "manifests/develop/api.pp",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1000105
+      },
+      "writtenOn": "2015-07-06T05:15:50Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9a245df4_e1d70aec",
+      "range": {
+        "startLine": 10,
+        "startChar": 0,
+        "endLine": 12,
+        "endChar": 20
+      },
+      "revId": "627b6e74cd56dbc5ea605bd44f95a2c99208def4",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9a245df4_81fe0e6a",
         "filename": "manifests/init.pp",
         "patchSetId": 1
@@ -59,6 +107,30 @@
       "writtenOn": "2015-07-06T04:58:23Z",
       "side": 1,
       "message": "0755",
+      "range": {
+        "startLine": 60,
+        "startChar": 16,
+        "endLine": 60,
+        "endChar": 20
+      },
+      "revId": "627b6e74cd56dbc5ea605bd44f95a2c99208def4",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a245df4_a12232ff",
+        "filename": "manifests/init.pp",
+        "patchSetId": 1
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 1000105
+      },
+      "writtenOn": "2015-07-06T05:15:50Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9a245df4_81fe0e6a",
       "range": {
         "startLine": 60,
         "startChar": 16,
