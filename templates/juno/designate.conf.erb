@@ -32,23 +32,23 @@ logdir = /var/log/designate
 # Which networking API to use, Defaults to neutron
 #network_api = neutron
 
-
-# RabbitMQ Config
-rabbit_hosts="<%= rabbit_hosts.join(',') %>"
-rabbit_ha_queues=True
-rabbit_userid=<%= rabbit_user %>
-rabbit_password=<%= rabbit_pass %>
-rabbit_durable_queues=True
-rabbit_use_ssl=True
-kombu_ssl_version=TLSv1
-rabbit_virtual_host=<%= rabbit_virtual_host %>
-
 domain_recordsets = 5000
 domain_records = 5000
 recordset_records = 5000
 quota_domains = 25
 quota_domain_records = 10000
 quota_recordset_records = 10000
+
+rabbit_durable_queues=True
+[oslo_messaging_rabbit]
+rabbit_hosts="<%= rabbit_hosts.join(',') %>"
+rabbit_ha_queues=True
+rabbit_userid=<%= rabbit_user %>
+rabbit_password=<%= rabbit_pass %>
+amqp_durable_queues=True
+rabbit_use_ssl=True
+kombu_ssl_version=TLSv1
+rabbit_virtual_host=<%= rabbit_virtual_host %>
 
 ########################
 ## Service Configuration
