@@ -66,7 +66,7 @@
 #   (optional) User used to connect to rabbitmq.
 #   Defaults to 'guest'
 #
-# [*rabbit_virtualhost*]
+# [*rabbit_virtual_host*]
 #   (optional) The RabbitMQ virtual host.
 #   Defaults to '/'
 #
@@ -90,6 +90,12 @@
 #   (optional) Notification Topics
 #   Defaults to 'notifications'
 #
+# DEPRECATED PARAMETER
+#
+# [*rabbit_virtualhost*]
+#   (optional) DEPRECATED. Use rabbit_virtual_host
+#   Defaults to undef.
+#
 
 class designate(
   $amqp_durable_queues  = false,
@@ -108,11 +114,20 @@ class designate(
   $rabbit_hosts         = false,
   $rabbit_userid        = 'guest',
   $rabbit_password      = '',
-  $rabbit_virtualhost   = '/',
   $rabbit_use_ssl       = false,
+  $rabbit_virtual_host  = '/',
   $notification_driver  = 'messaging',
   $notification_topics  = 'notifications',
+  #DEPRECATED PARAMETER
+  $rabbit_virtualhost   = undef,
 ) {
+
+  if $rabbit_virtualhost {
+    warning('The parameter rabbit_virtualhost is deprecated, use rabbit_virtual_host.')
+    $rabbit_virtual_host_real = $rabbit_virtualhost
+  } else {
+    $rabbit_virtual_host_real = $rabbit_virtual_host
+  }
 
   include ::designate::logging
   include ::designate::params
@@ -159,10 +174,10 @@ class designate(
   designate_config {
     'oslo_messaging_rabbit/rabbit_userid'          : value => $rabbit_userid;
     'oslo_messaging_rabbit/rabbit_password'        : value => $rabbit_password, secret => true;
-    'oslo_messaging_rabbit/rabbit_virtualhost'     : value => $rabbit_virtualhost;
     'oslo_messaging_rabbit/rabbit_use_ssl'         : value => $rabbit_use_ssl;
     'oslo_messaging_rabbit/amqp_durable_queues'    : value => $amqp_durable_queues;
     'oslo_messaging_rabbit/kombu_ssl_version'      : value => $kombu_ssl_version;
+    'oslo_messaging_rabbit/rabbit_virtual_host'    : value => $rabbit_virtual_host_real;
   }
 
   if $rabbit_hosts {
