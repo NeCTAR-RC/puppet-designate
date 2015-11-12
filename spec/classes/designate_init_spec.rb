@@ -16,20 +16,22 @@ describe 'designate' do
 
   let :rabbit_ha_params do
     {
-      :rabbit_hosts       => [ '10.0.0.1:5672', '10.0.0.2:5672', '10.0.0.3:5672' ],
-      :rabbit_userid      => 'guest',
-      :rabbit_password    => '',
-      :rabbit_virtualhost => '/'
+      :rabbit_hosts        => [ '10.0.0.1:5672', '10.0.0.2:5672', '10.0.0.3:5672' ],
+      :rabbit_userid       => 'guest',
+      :rabbit_password     => '',
+      :rabbit_virtual_host => '/',
+      :rabbit_virtualhost  => '/'
     }
   end
 
   let :rabbit_non_ha_params do
     {
-      :rabbit_host        => '127.0.0.1',
-      :rabbit_port        => 5672,
-      :rabbit_userid      => 'guest',
-      :rabbit_password    => '',
-      :rabbit_virtualhost => '/'
+      :rabbit_host         => '127.0.0.1',
+      :rabbit_port         => 5672,
+      :rabbit_userid       => 'guest',
+      :rabbit_password     => '',
+      :rabbit_virtual_host => '/',
+      :rabbit_virtualhost  => '/'
     }
   end
 
@@ -115,7 +117,8 @@ describe 'designate' do
       is_expected.to contain_designate_config('oslo_messaging_rabbit/rabbit_userid').with_value( params[:rabbit_userid] )
       is_expected.to contain_designate_config('oslo_messaging_rabbit/rabbit_password').with_value( params[:rabbit_password] )
       is_expected.to contain_designate_config('oslo_messaging_rabbit/rabbit_password').with_value( params[:rabbit_password] ).with_secret(true)
-      is_expected.to contain_designate_config('oslo_messaging_rabbit/rabbit_virtualhost').with_value( params[:rabbit_virtualhost] )
+      is_expected.to contain_designate_config('oslo_messaging_rabbit/rabbit_virtual_host').with_value( params[:rabbit_virtual_host] )
+      is_expected.to contain_designate_config('oslo_messaging_rabbit/rabbit_virtual_host').with_value( params[:rabbit_virtualhost] )
     end
 
     it { is_expected.to contain_designate_config('oslo_messaging_rabbit/rabbit_host').with_value( params[:rabbit_host] ) }
@@ -132,7 +135,8 @@ describe 'designate' do
       is_expected.to contain_designate_config('oslo_messaging_rabbit/rabbit_userid').with_value( params[:rabbit_userid] )
       is_expected.to contain_designate_config('oslo_messaging_rabbit/rabbit_password').with_value( params[:rabbit_password] )
       is_expected.to contain_designate_config('oslo_messaging_rabbit/rabbit_password').with_value( params[:rabbit_password] ).with_secret(true)
-      is_expected.to contain_designate_config('oslo_messaging_rabbit/rabbit_virtualhost').with_value( params[:rabbit_virtualhost] )
+      is_expected.to contain_designate_config('oslo_messaging_rabbit/rabbit_virtual_host').with_value( params[:rabbit_virtual_host] )
+      is_expected.to contain_designate_config('oslo_messaging_rabbit/rabbit_virtual_host').with_value( params[:rabbit_virtualhost] )
     end
 
     it { is_expected.to contain_designate_config('oslo_messaging_rabbit/rabbit_host').with_ensure( 'absent' ) }
