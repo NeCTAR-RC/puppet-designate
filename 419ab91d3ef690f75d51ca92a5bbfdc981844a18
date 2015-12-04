@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a106d94_489f0460",
+        "filename": "manifests/minidns.pp",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2015-12-04T05:38:14Z",
+      "side": 1,
+      "message": "these too :-)",
+      "range": {
+        "startLine": 2,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 39
+      },
+      "revId": "419ab91d3ef690f75d51ca92a5bbfdc981844a18",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    }
+  ]
+}
