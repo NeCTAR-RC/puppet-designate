@@ -56,9 +56,14 @@
 #  (optional) Enable Designate API Version 2 (experimental)
 #  Defaults to false
 #
+# [*api_base_uri*]
+#  (optional) base uri for api.
+#  Defaults to undef
+#
 class designate::api (
   $package_ensure             = present,
   $api_package_name           = undef,
+  $api_base_uri               = undef,
   $enabled                    = true,
   $service_ensure             = 'running',
   $auth_strategy              = 'noauth',
@@ -75,6 +80,7 @@ class designate::api (
 
   # API Service
   designate_config {
+    'service:api/api_base_uri'              : value => $api_base_uri;
     'service:api/auth_strategy'             : value => $auth_strategy;
     'service:api/enable_api_v1'             : value => $enable_api_v1;
     'service:api/enable_api_v2'             : value => $enable_api_v2;
