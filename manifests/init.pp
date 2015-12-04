@@ -70,6 +70,18 @@
 #   (optional) The RabbitMQ virtual host.
 #   Defaults to '/'
 #
+# [*rabbit_use_ssl*]
+#   (optional) Use SSL for rabbitmq
+#   Defaults to 'True'
+#
+# [*amqp_durable_queues*]
+#   (optional) Use amqp durable queues for rabbitmq
+#   Defaults to 'True'
+#
+# [*kombu_ssl_version*]
+#   (optional) Kombu ssl version to use with rabbitmq
+#   Defaults to 'TLSv1'
+#
 # [*notification_driver*]
 #   (optional) Driver used for issuing notifications
 #   Defaults to 'messaging'
@@ -80,10 +92,12 @@
 #
 
 class designate(
+  $amqp_durable_queues  = 'False',
   $package_ensure       = present,
   $common_package_name  = undef,
   $verbose              = undef,
   $debug                = undef,
+  $kombu_ssl_version    = 'TLSv1',
   $log_dir              = undef,
   $use_syslog           = undef,
   $use_stderr           = undef,
@@ -95,6 +109,7 @@ class designate(
   $rabbit_userid        = 'guest',
   $rabbit_password      = '',
   $rabbit_virtualhost   = '/',
+  $rabbit_use_ssl       = 'False',
   $notification_driver  = 'messaging',
   $notification_topics  = 'notifications',
 ) {
@@ -145,6 +160,9 @@ class designate(
     'oslo_messaging_rabbit/rabbit_userid'          : value => $rabbit_userid;
     'oslo_messaging_rabbit/rabbit_password'        : value => $rabbit_password, secret => true;
     'oslo_messaging_rabbit/rabbit_virtualhost'     : value => $rabbit_virtualhost;
+    'oslo_messaging_rabbit/rabbit_use_ssl'         : value => $rabbit_use_ssl;
+    'oslo_messaging_rabbit/amqp_durable_queues'    : value => $amqp_durable_queues;
+    'oslo_messaging_rabbit/kombu_ssl_version'      : value => 'TLSv1';
   }
 
   if $rabbit_hosts {
