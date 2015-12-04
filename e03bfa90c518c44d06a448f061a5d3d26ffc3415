@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a106d94_c8b494f4",
+        "filename": "manifests/init.pp",
+        "patchSetId": 1
+      },
+      "lineNbr": 95,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2015-12-04T04:46:00Z",
+      "side": 1,
+      "message": "default to false",
+      "range": {
+        "startLine": 95,
+        "startChar": 27,
+        "endLine": 95,
+        "endChar": 31
+      },
+      "revId": "e03bfa90c518c44d06a448f061a5d3d26ffc3415",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a106d94_a8b958eb",
+        "filename": "manifests/init.pp",
+        "patchSetId": 1
+      },
+      "lineNbr": 112,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2015-12-04T04:46:00Z",
+      "side": 1,
+      "message": "default to false",
+      "range": {
+        "startLine": 112,
+        "startChar": 27,
+        "endLine": 112,
+        "endChar": 31
+      },
+      "revId": "e03bfa90c518c44d06a448f061a5d3d26ffc3415",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    }
+  ]
+}
