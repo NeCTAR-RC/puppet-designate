@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a106d94_4795323f",
+        "filename": "manifests/init.pp",
+        "patchSetId": 2
+      },
+      "lineNbr": 95,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2015-12-08T23:32:39Z",
+      "side": 1,
+      "message": "should just be false",
+      "range": {
+        "startLine": 95,
+        "startChar": 26,
+        "endLine": 95,
+        "endChar": 33
+      },
+      "revId": "e9188d579d8466ddb123e9e21f92605a41e344a6",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a106d94_2792b657",
+        "filename": "manifests/init.pp",
+        "patchSetId": 2
+      },
+      "lineNbr": 112,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2015-12-08T23:32:39Z",
+      "side": 1,
+      "message": "dito",
+      "range": {
+        "startLine": 112,
+        "startChar": 26,
+        "endLine": 112,
+        "endChar": 33
+      },
+      "revId": "e9188d579d8466ddb123e9e21f92605a41e344a6",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a106d94_879f2a5f",
+        "filename": "manifests/init.pp",
+        "patchSetId": 2
+      },
+      "lineNbr": 165,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2015-12-08T23:32:39Z",
+      "side": 1,
+      "message": "whoops",
+      "range": {
+        "startLine": 165,
+        "startChar": 62,
+        "endLine": 165,
+        "endChar": 69
+      },
+      "revId": "e9188d579d8466ddb123e9e21f92605a41e344a6",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    }
+  ]
+}
