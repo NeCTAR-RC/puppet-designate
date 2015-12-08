@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a106d94_07b5faed",
+        "filename": "manifests/params.pp",
+        "patchSetId": 3
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1000105
+      },
+      "writtenOn": "2015-12-08T07:30:56Z",
+      "side": 1,
+      "message": "This is different from all the others because all the others are wrong. I\u0027ve filed https://bugs.launchpad.net/puppet-designate/+bug/1523781",
+      "revId": "577fe540967fd2eba34c206a6bf4842353676299",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    }
+  ]
+}
