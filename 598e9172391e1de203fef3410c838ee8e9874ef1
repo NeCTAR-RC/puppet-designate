@@ -1,0 +1,165 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a106d94_30c14a81",
+        "filename": "manifests/params.pp",
+        "patchSetId": 3
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2015-12-16T04:54:51Z",
+      "side": 1,
+      "message": "Too many spaces before the \u0027\u003d\u0027?",
+      "range": {
+        "startLine": 6,
+        "startChar": 0,
+        "endLine": 10,
+        "endChar": 54
+      },
+      "revId": "598e9172391e1de203fef3410c838ee8e9874ef1",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a106d94_90be3efe",
+        "filename": "manifests/pool.pp",
+        "patchSetId": 3
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2015-12-16T04:54:51Z",
+      "side": 1,
+      "message": "leading space?",
+      "range": {
+        "startLine": 1,
+        "startChar": 24,
+        "endLine": 1,
+        "endChar": 25
+      },
+      "revId": "598e9172391e1de203fef3410c838ee8e9874ef1",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a106d94_d03716af",
+        "filename": "manifests/pool_manager.pp",
+        "patchSetId": 3
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2015-12-16T04:54:51Z",
+      "side": 1,
+      "message": "(optional)?",
+      "range": {
+        "startLine": 36,
+        "startChar": 3,
+        "endLine": 36,
+        "endChar": 4
+      },
+      "revId": "598e9172391e1de203fef3410c838ee8e9874ef1",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a106d94_b03c1a95",
+        "filename": "manifests/pool_nameserver.pp",
+        "patchSetId": 3
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2015-12-16T04:54:51Z",
+      "side": 1,
+      "message": "should remove \u0027, \u0027?",
+      "range": {
+        "startLine": 5,
+        "startChar": 47,
+        "endLine": 5,
+        "endChar": 49
+      },
+      "revId": "598e9172391e1de203fef3410c838ee8e9874ef1",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a106d94_10424e10",
+        "filename": "manifests/pool_nameserver.pp",
+        "patchSetId": 3
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2015-12-16T04:54:51Z",
+      "side": 1,
+      "message": "too much padding here",
+      "range": {
+        "startLine": 9,
+        "startChar": 34,
+        "endLine": 9,
+        "endChar": 39
+      },
+      "revId": "598e9172391e1de203fef3410c838ee8e9874ef1",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a106d94_f0469222",
+        "filename": "manifests/pool_target.pp",
+        "patchSetId": 3
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2015-12-16T04:54:51Z",
+      "side": 1,
+      "message": "not required",
+      "range": {
+        "startLine": 17,
+        "startChar": 56,
+        "endLine": 17,
+        "endChar": 58
+      },
+      "revId": "598e9172391e1de203fef3410c838ee8e9874ef1",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a106d94_504b262b",
+        "filename": "manifests/pool_target.pp",
+        "patchSetId": 3
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2015-12-16T04:54:51Z",
+      "side": 1,
+      "message": "padding",
+      "range": {
+        "startLine": 22,
+        "startChar": 33,
+        "endLine": 22,
+        "endChar": 35
+      },
+      "revId": "598e9172391e1de203fef3410c838ee8e9874ef1",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    }
+  ]
+}
