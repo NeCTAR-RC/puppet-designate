@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a106d94_7052a2de",
+        "filename": "manifests/api.pp",
+        "patchSetId": 2
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2015-12-16T04:57:36Z",
+      "side": 1,
+      "message": "one space here as we don\u0027t need to line it up with the ensure \u003d\u003e absent line below",
+      "range": {
+        "startLine": 83,
+        "startChar": 57,
+        "endLine": 83,
+        "endChar": 59
+      },
+      "revId": "132d67b29c529fb082df8aedea84c7509741b641",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a106d94_90559ec8",
+        "filename": "manifests/api.pp",
+        "patchSetId": 2
+      },
+      "lineNbr": 90,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2015-12-16T04:57:36Z",
+      "side": 1,
+      "message": "padding",
+      "range": {
+        "startLine": 90,
+        "startChar": 31,
+        "endLine": 90,
+        "endChar": 44
+      },
+      "revId": "132d67b29c529fb082df8aedea84c7509741b641",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a106d94_d05ef6e8",
+        "filename": "manifests/api.pp",
+        "patchSetId": 2
+      },
+      "lineNbr": 92,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2015-12-16T04:57:36Z",
+      "side": 1,
+      "message": "Is the convention to put the padding spaces after the colon ?\ne.g.\n\u0027service:api/enable_api_v2\u0027:             value \u003d\u003e $enable_api_v2;",
+      "range": {
+        "startLine": 92,
+        "startChar": 4,
+        "endLine": 92,
+        "endChar": 70
+      },
+      "revId": "132d67b29c529fb082df8aedea84c7509741b641",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    }
+  ]
+}
