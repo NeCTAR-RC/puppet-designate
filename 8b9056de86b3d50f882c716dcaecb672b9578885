@@ -22,6 +22,30 @@
       "revId": "8b9056de86b3d50f882c716dcaecb672b9578885",
       "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bad4c104_cce6ac16",
+        "filename": "spec/classes/designate_api_spec.rb",
+        "patchSetId": 2
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 1000105
+      },
+      "writtenOn": "2016-02-18T23:30:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "bad4c104_cc1f8c08",
+      "range": {
+        "startLine": 54,
+        "startChar": 40,
+        "endLine": 54,
+        "endChar": 41
+      },
+      "revId": "8b9056de86b3d50f882c716dcaecb672b9578885",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
     }
   ]
 }
