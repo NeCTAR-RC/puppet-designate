@@ -9,6 +9,9 @@ class designate::params {
   $log_dir                 =  '/var/log/designate'
   $client_package_name     =  'python-designateclient'
 
+  $zone_manager_package_name = 'designate-zone-manager'
+  $zone_manager_service_name = 'designate-zone-manager'
+
   case $::osfamily {
     'RedHat': {
       # package name
