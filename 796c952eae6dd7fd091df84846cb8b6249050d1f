@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bad4c104_26ad7089",
+        "filename": "manifests/params.pp",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2016-03-06T22:19:21Z",
+      "side": 1,
+      "message": "So these are the same for both OS types?",
+      "range": {
+        "startLine": 12,
+        "startChar": 0,
+        "endLine": 13,
+        "endChar": 55
+      },
+      "revId": "796c952eae6dd7fd091df84846cb8b6249050d1f",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bad4c104_06a06c8f",
+        "filename": "manifests/zone_manager.pp",
+        "patchSetId": 1
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2016-03-06T22:19:21Z",
+      "side": 1,
+      "message": "I feel this should just be package_name?",
+      "range": {
+        "startLine": 42,
+        "startChar": 3,
+        "endLine": 42,
+        "endChar": 28
+      },
+      "revId": "796c952eae6dd7fd091df84846cb8b6249050d1f",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bad4c104_46aa7471",
+        "filename": "manifests/zone_manager.pp",
+        "patchSetId": 1
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2016-03-06T22:19:21Z",
+      "side": 1,
+      "message": "this doesn\u0027t really make sense as it is already a default isn\u0027t it?",
+      "range": {
+        "startLine": 62,
+        "startChar": 22,
+        "endLine": 62,
+        "endChar": 103
+      },
+      "revId": "796c952eae6dd7fd091df84846cb8b6249050d1f",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    }
+  ]
+}
