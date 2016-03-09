@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bad4c104_87047616",
+        "filename": "manifests/zone_manager.pp",
+        "patchSetId": 3
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2016-03-09T04:56:11Z",
+      "side": 1,
+      "message": "remove this. the actual param you use looks right though",
+      "range": {
+        "startLine": 11,
+        "startChar": 4,
+        "endLine": 11,
+        "endChar": 17
+      },
+      "revId": "78b63b90d4d8f84cf6f283e2f6e39c0079aed9eb",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bad4c104_a7097a2e",
+        "filename": "manifests/zone_manager.pp",
+        "patchSetId": 3
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2016-03-09T04:56:11Z",
+      "side": 1,
+      "message": "and this",
+      "range": {
+        "startLine": 13,
+        "startChar": 15,
+        "endLine": 13,
+        "endChar": 28
+      },
+      "revId": "78b63b90d4d8f84cf6f283e2f6e39c0079aed9eb",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bad4c104_672692bc",
+        "filename": "spec/classes/designate_zone_manager_spec.rb",
+        "patchSetId": 3
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2016-03-09T04:56:11Z",
+      "side": 1,
+      "message": "did you also want to test that service ensure is stopped if the param is given? same with other params",
+      "range": {
+        "startLine": 45,
+        "startChar": 4,
+        "endLine": 45,
+        "endChar": 44
+      },
+      "revId": "78b63b90d4d8f84cf6f283e2f6e39c0079aed9eb",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    }
+  ]
+}
