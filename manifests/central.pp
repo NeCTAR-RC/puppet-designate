@@ -20,10 +20,6 @@
 #  (optional) Whether the designate central service will be running.
 #  Defaults to 'running'
 #
-# [*backend_driver*]
-#  (optional) Driver used for backend communication (fake, rpc, bind9, powerdns)
-#  Defaults to 'bind9'
-#
 # [*managed_resource_email*]
 #  (optional) Email to use for managed resources like domains created by the FloatingIP API
 #  Defaults to 'hostmaster@example.com'
@@ -37,14 +33,12 @@ class designate::central (
   $central_package_name       = undef,
   $enabled                    = true,
   $service_ensure             = 'running',
-  $backend_driver             = 'bind9',
   $managed_resource_email     = 'hostmaster@example.com',
   $managed_resource_tenant_id = '123456',
 ) inherits designate {
   include ::designate::params
 
   designate_config {
-    'service:central/backend_driver'             : value => $backend_driver;
     'service:central/managed_resource_email'     : value => $managed_resource_email;
     'service:central/managed_resource_tenant_id' : value => $managed_resource_tenant_id;
   }
