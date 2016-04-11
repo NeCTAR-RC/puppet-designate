@@ -16,6 +16,14 @@
 #   (optional) Whether to enable services.
 #   Defaults to true
 #
+# [*enable_recovery_timer*]
+#   (optional) Enable the recovery thread
+#   Defaults to true
+#
+# [*enable_sync_timer*]
+#   (optional) Enable the sync thread
+#   Defaults to true
+#
 # [*service_ensure*]
 #  (optional) Whether the designate central service will be running.
 #  Defaults to 'running'
@@ -59,6 +67,8 @@ class designate::pool_manager (
   $package_ensure            = 'present',
   $pool_manager_package_name = undef,
   $enabled                   = true,
+  $enable_sync_timer         = true,
+  $enable_recovery_timer     = true,
   $service_ensure            = 'running',
   $pool_id,
   $threshold_percentage      = '100',
@@ -72,6 +82,9 @@ class designate::pool_manager (
 
 ) inherits designate {
   include ::designate::params
+
+  validate_bool($enable_sync_timer)
+  validate_bool($enable_recovery_timer)
 
   designate::generic_service { 'pool_manager':
     enabled        => $enabled,
@@ -88,6 +101,17 @@ class designate::pool_manager (
     'service:pool_manager/poll_retry_interval'    : value => $poll_retry_interval;
     'service:pool_manager/poll_max_retries'       : value => $poll_max_retries;
     'service:pool_manager/periodic_sync_interval' : value => $periodic_sync_interval;
+  }
+
+  if $enable_sync_timer {
+    designate_config { 'service:pool_manager/enable_sync_timer' : ensure => absent, }
+  } else {
+    designate_config { 'service:pool_manager/enable_sync_timer' : value => 'False', }
+  }
+  if $enable_recovery_timer {
+    designate_config { 'service:pool_manager/enable_recovery_timer' : ensure => absent, }
+  } else {
+    designate_config { 'service:pool_manager/enable_recovery_timer' : value => 'False', }
   }
 
   create_resources('pool', $pool_hash)
