@@ -20,6 +20,30 @@
 #   (optional) should the daemons log debug messages.
 #   Defaults to undef
 #
+# [*quota_api_export_size*]
+#   (optional) size of api export
+#   Defaults to undef
+#
+# [*quota_domain_records*]
+#   (optional) records per domain
+#   Defaults to undef
+#
+# [*quota_domain_recordsets*]
+#   (optional) recordsets per domain
+#   Defaults to undef
+#
+# [*quota_domains*]
+#   (optional) records per tenant
+#   Defaults to undef
+#
+# [*quota_driver*]
+#   (optional) storage driver to use
+#   Defaults to undef, if undefined, 'storage' driver will be used.
+#
+# [*quota_recordset_records*]
+#   (optional) recordsets per record
+#   Defaults to undef
+#
 # [*verbose*]
 #   (optional) should the daemons log verbose messages.
 #   Defaults to undef
@@ -98,26 +122,32 @@
 #
 
 class designate(
-  $amqp_durable_queues  = false,
-  $package_ensure       = present,
-  $common_package_name  = undef,
-  $verbose              = undef,
-  $debug                = undef,
-  $kombu_ssl_version    = 'TLSv1',
-  $log_dir              = undef,
-  $use_syslog           = undef,
-  $use_stderr           = undef,
-  $log_facility         = undef,
-  $root_helper          = 'sudo designate-rootwrap /etc/designate/rootwrap.conf',
-  $rabbit_host          = '127.0.0.1',
-  $rabbit_port          = '5672',
-  $rabbit_hosts         = false,
-  $rabbit_userid        = 'guest',
-  $rabbit_password      = '',
-  $rabbit_use_ssl       = false,
-  $rabbit_virtual_host  = '/',
-  $notification_driver  = 'messaging',
-  $notification_topics  = 'notifications',
+  $amqp_durable_queues     = false,
+  $package_ensure          = present,
+  $common_package_name     = undef,
+  $verbose                 = undef,
+  $debug                   = undef,
+  $kombu_ssl_version       = 'TLSv1',
+  $log_dir                 = undef,
+  $use_syslog              = undef,
+  $use_stderr              = undef,
+  $log_facility            = undef,
+  $quota_api_export_size   = undef,
+  $quota_domain_records    = undef,
+  $quota_domain_recordsets = undef,
+  $quota_domains           = undef,
+  $quota_driver            = undef,
+  $quota_recordset_records = undef,
+  $root_helper             = 'sudo designate-rootwrap /etc/designate/rootwrap.conf',
+  $rabbit_host             = '127.0.0.1',
+  $rabbit_port             = '5672',
+  $rabbit_hosts            = false,
+  $rabbit_userid           = 'guest',
+  $rabbit_password         = '',
+  $rabbit_use_ssl          = false,
+  $rabbit_virtual_host     = '/',
+  $notification_driver     = 'messaging',
+  $notification_topics     = 'notifications',
   #DEPRECATED PARAMETER
   $rabbit_virtualhost   = undef,
 ) {
@@ -198,6 +228,37 @@ class designate(
     'DEFAULT/state_path'             : value => $::designate::params::state_path;
     'DEFAULT/notification_driver'    : value => $notification_driver;
     'DEFAULT/notification_topics'    : value => $notification_topics;
+  }
+
+  if $quota_api_export_size {
+    designate_config { 'DEFAULT/quota_api_export_size' : value => $quota_api_export_size }
+  } else {
+    designate_config { 'DEFAULT/quota_api_export_size' : ensure => absent }
+  }
+  if $quota_domain_records {
+    designate_config { 'DEFAULT/quota_domain_records' : value => $quota_domain_records }
+  } else {
+    designate_config { 'DEFAULT/quota_domain_records' : ensure => absent }
+  }
+  if $quota_domain_recordsets {
+    designate_config { 'DEFAULT/quota_domain_recordsets' : value => $quota_domain_recordsets }
+  } else {
+    designate_config { 'DEFAULT/quota_domain_recordsets' : ensure => absent }
+  }
+  if $quota_domains {
+    designate_config { 'DEFAULT/quota_domains' : value => $quota_domains }
+  } else {
+    designate_config { 'DEFAULT/quota_domains' : ensure => absent }
+  }
+  if $quota_driver {
+    designate_config { 'DEFAULT/quota_driver' : value => $quota_driver }
+  } else {
+    designate_config { 'DEFAULT/quota_driver' : ensure => absent }
+  }
+  if $quota_recordset_records {
+    designate_config { 'DEFAULT/quota_recordset_records' : value => $quota_recordset_records }
+  } else {
+    designate_config { 'DEFAULT/quota_recordset_records' : ensure => absent }
   }
 
   # Setup anchors for install, config and service phases of the module.  These
