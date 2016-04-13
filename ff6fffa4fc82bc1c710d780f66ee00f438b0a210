@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bad4c104_f1632eaf",
+        "filename": "manifests/init.pp",
+        "patchSetId": 1
+      },
+      "lineNbr": 237,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2016-04-13T11:20:20Z",
+      "side": 1,
+      "message": "I\u0027m sure there\u0027s a way this can be done better. I\u0027ll have to check out some other modules I was looking at to remember",
+      "range": {
+        "startLine": 233,
+        "startChar": 0,
+        "endLine": 237,
+        "endChar": 3
+      },
+      "revId": "ff6fffa4fc82bc1c710d780f66ee00f438b0a210",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    }
+  ]
+}
