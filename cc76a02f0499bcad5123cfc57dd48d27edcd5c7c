@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bad4c104_f18dee32",
+        "filename": "manifests/quota.pp",
+        "patchSetId": 2
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2016-04-14T01:29:35Z",
+      "side": 1,
+      "message": "designate::quota",
+      "range": {
+        "startLine": 32,
+        "startChar": 6,
+        "endLine": 32,
+        "endChar": 11
+      },
+      "revId": "cc76a02f0499bcad5123cfc57dd48d27edcd5c7c",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    }
+  ]
+}
