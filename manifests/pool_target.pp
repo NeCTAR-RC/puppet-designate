@@ -16,9 +16,12 @@
 #  'port: 53, host: 123.456.78.9, connection: mysql://user:pass@127.0.0.1/database'
 define designate::pool_target ($masters, $type, $options) {
 
+  validate_array($masters)
+  validate_hash($options)
+
   designate_config {
-    "pool_target:${name}/masters" : value => $masters;
+    "pool_target:${name}/masters" : value => join($masters,',');
     "pool_target:${name}/type"    : value => $type;
-    "pool_target:${name}/options" : value => $options;
+    "pool_target:${name}/options" : value => join(join_keys_to_values($options,':'),',');
   }
 }

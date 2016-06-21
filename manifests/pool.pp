@@ -4,10 +4,12 @@
 
 define designate::pool ($targets, $nameservers, $also_notifies = undef,) {
 
+  validate_array($targets)
+  validate_array($nameservers)
 
   designate_config {
-    "pool:${name}/targets"     : value => $targets;
-    "pool:${name}/nameservers" : value => $nameservers;
+    "pool:${name}/targets"     : value => join($targets,',');
+    "pool:${name}/nameservers" : value => join($nameservers,',');
   }
 
   if $also_notifies {
