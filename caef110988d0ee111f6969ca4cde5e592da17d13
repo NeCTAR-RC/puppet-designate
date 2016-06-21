@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bad4c104_2d219dfb",
+        "filename": "manifests/pool.pp",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1000105
+      },
+      "writtenOn": "2016-06-21T04:57:00Z",
+      "side": 1,
+      "message": "maybe \u0027, \u0027 instead of \u0027,\u0027 ?",
+      "revId": "caef110988d0ee111f6969ca4cde5e592da17d13",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bad4c104_4d1c21c2",
+        "filename": "manifests/pool.pp",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1000105
+      },
+      "writtenOn": "2016-06-21T04:57:00Z",
+      "side": 1,
+      "message": "ditto",
+      "revId": "caef110988d0ee111f6969ca4cde5e592da17d13",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bad4c104_0d221901",
+        "filename": "manifests/pool_target.pp",
+        "patchSetId": 1
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1000105
+      },
+      "writtenOn": "2016-06-21T04:57:00Z",
+      "side": 1,
+      "message": "could we maybe put a space here after the comma so the options are a little more human parseable? ie on designatel.test we have\n   options\u003dport:53, host:172.26.9.192, connection:mysql://pdns:test@127.0.0.1/pdns",
+      "revId": "caef110988d0ee111f6969ca4cde5e592da17d13",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    }
+  ]
+}
