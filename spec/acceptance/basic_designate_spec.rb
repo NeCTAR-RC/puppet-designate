@@ -47,8 +47,7 @@ describe 'basic designate' do
         enabled       => true,
         auth_strategy => 'keystone',
       }
-      class {'::designate::central':
-          backend_driver => 'bind9',
+      include ::designate::central'
       }
       class { '::designate::backend::bind9':
         rndc_config_file => '',
