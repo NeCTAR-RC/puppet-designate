@@ -167,6 +167,7 @@ class designate(
   $control_exchange           = $::os_service_default,
   $notification_topics        = 'notifications',
   $purge_config               = false,
+  $amqp_durable_queues        = false,
   #DEPRECATED PARAMETER
   $rabbit_virtualhost         = undef,
   $rabbit_host                = $::os_service_default,
@@ -258,6 +259,7 @@ to your desired configuration.")
     rabbit_password       => $rabbit_password,
     rabbit_virtual_host   => $rabbit_virtual_host,
     rabbit_ha_queues      => $rabbit_ha_queues_real,
+    amqp_durable_queues   => $amqp_durable_queues,
   }
 
   oslo::messaging::default { 'designate_config':
