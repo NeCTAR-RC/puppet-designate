@@ -132,6 +132,7 @@ class designate(
   $rabbit_password       = '',
   $rabbit_virtual_host   = '/',
   $rabbit_use_ssl        = false,
+  $amqp_durable_queues   = false,
   $kombu_ssl_ca_certs    = $::os_service_default,
   $kombu_ssl_certfile    = $::os_service_default,
   $kombu_ssl_keyfile     = $::os_service_default,
@@ -194,6 +195,7 @@ class designate(
     'oslo_messaging_rabbit/rabbit_password'        : value => $rabbit_password, secret => true;
     'oslo_messaging_rabbit/rabbit_virtual_host'    : value => $rabbit_virtual_host_real;
     'oslo_messaging_rabbit/rabbit_use_ssl'         : value => $rabbit_use_ssl;
+    'oslo_messaging_rabbit/amqp_durable_queues'    : value => $amqp_durable_queues;
     'oslo_messaging_rabbit/kombu_ssl_ca_certs'     : value => $kombu_ssl_ca_certs;
     'oslo_messaging_rabbit/kombu_ssl_certfile'     : value => $kombu_ssl_certfile;
     'oslo_messaging_rabbit/kombu_ssl_keyfile'      : value => $kombu_ssl_keyfile;
