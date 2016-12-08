@@ -1,0 +1,8 @@
+Code-Review+1: Andrew Spiers <spiers@unimelb.edu.au>
+Verified+1: Jenkins <no-reply+jenkins@nectar.org.au>
+Code-Review+2: Sam Morrison <sam.morrison@unimelb.edu.au>
+Submitted-by: Sam Morrison <sam.morrison@unimelb.edu.au>
+Submitted-at: Thu, 08 Dec 2016 16:29:15 +1100
+Reviewed-on: https://review.rc.nectar.org.au/8572
+Project: NeCTAR-RC/puppet-designate
+Branch: refs/heads/nectar/newton
