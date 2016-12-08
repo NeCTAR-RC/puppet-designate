@@ -37,8 +37,6 @@ class designate::quota (
   $quota_recordset_records = $::os_service_default,
 ) {
 
-  include ::designate::deps
-
   designate_config {
     'DEFAULT/quota_api_export_size':   value => $quota_api_export_size;
     'DEFAULT/quota_zone_records':      value => $quota_zone_records;
